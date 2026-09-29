@@ -1,0 +1,17 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "keylogger-detection-toolkit"
+version = "1.0.0"
+description = "Read-only defensive detection of keylogger indicators"
+requires-python = ">=3.10"
+dependencies = []
+
+[project.optional-dependencies]
+process = ["psutil>=5.9,<8"]
+test = ["pytest>=8,<9"]
+
+[project.scripts]
+keylogger-detector = "keylogger_detector:main"
