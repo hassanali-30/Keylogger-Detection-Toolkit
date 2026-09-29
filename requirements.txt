@@ -1,0 +1,2 @@
+# Optional process metadata and command-line visibility
+psutil>=5.9,<8
